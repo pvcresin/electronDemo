@@ -1,0 +1,16 @@
+{
+  "name": "electronDemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "electron .",
+    "prod": "npm run production && npm run start",
+    "production": "electron-packager . DemoApp --platform=win32 --arch=x64 --overwrite",
+    "start": "start DemoApp-win32-x64/DemoApp.exe"
+  },
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-packager": "^10.1.0"
+  }
+}
